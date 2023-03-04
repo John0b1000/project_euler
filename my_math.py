@@ -1,4 +1,4 @@
-# file: gcd_euclidean.py
+# file: my_math.py
 '''
 This script calculates the greatest common divisor (gcd) of two
 integers using the Euclidean algorithm.
@@ -208,4 +208,4 @@ if __name__ == '__main__':
     main(sys.argv)
 
 #
-# end file: gcd_euclidean.py
+# end file: my_math.py
