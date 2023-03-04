@@ -1,7 +1,6 @@
 # file: my_math.py
 '''
-This script calculates the greatest common divisor (gcd) of two
-integers using the Euclidean algorithm.
+This script demonstrates various mathematical functions and algorithms.
 '''
 
 # import modules
@@ -13,8 +12,10 @@ import numpy as np
 #
 class MyMath:
     '''
-    This class calculates the greatest common divisor (gcd) of two
-    integers using the Euclidean algorithm.
+    This class performs various efficient algorithms including:
+        Euclidean division with remainder
+        Euclidean Algorithm to find gcd of two integers
+        Sieve of Eratosthenes to find all primes not exceeding a positive integer
     '''
 
     # constructor
@@ -145,7 +146,7 @@ class MyMath:
             #
             i += 1
 
-        # loop over the array and find all primes less than or equal to n
+        # loop over the array and find all primes not exceeding n
         #
         count = 1
         for p in range(2, n_arg+1):
@@ -195,7 +196,7 @@ def main(argv):
     gcd_result = math.calculate(argv[1], argv[2])
     print(f"RESULT: gcd({argv[1]},{argv[2]}) = {gcd_result}")
 
-    # compute all primes less than or equal to n and write to a text file
+    # compute all primes not exceeding n and write to a text file
     #
     math.find_primes(argv[3])
     math.write_primes(argv[4])
